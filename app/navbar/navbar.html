@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <div class="container">
+    <h1>My Website</h1>
+    <ul class="menu">
+      <li><a  onclick="reloadWindow()">Home</a></li>
+      <li><a  onclick="loadContent('mobile')">Mobiles</a></li>
+      <li><a onclick="loadContent('mobileAccessories')">Mobile accessories</a></li>
+      <li><a onclick="loadContent('electronics')">Electronics</a></li>
+      <li><a onclick="loadContent('addProducts')">Add products</a></li>
+    </ul>
+    <div class="user">
+    <label class="switch">
+      <input type="checkbox" id="modeSwitch" onchange="toggleDarkMode()">
+      <span class="slider round"></span>
+    </label>
+    <p class="user-icon" onclick="loadContent('admin')"><i class="fas fa-user"></i></p>
+    </div>
+  </div>
+</nav>
+
+
+
+

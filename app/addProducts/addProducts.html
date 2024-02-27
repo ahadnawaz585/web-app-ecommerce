@@ -1,0 +1,44 @@
+<body>
+<link rel="stylesheet" href="./addProducts/addProducts.css">
+<div class="productsContainer">
+    <h1>Add Product</h1>
+    <form id="productForm" >
+        <div class="input-group">
+      <input type="text" id="productName" placeholder="Product Name" required>
+      <input type="text" id="productCompany" placeholder="Company Name">
+        </div>
+      <div class="input-group">
+      <input type="text" id="productPhoto" placeholder="Photo URL">
+      <input type="number" id="productPrice" placeholder="Price">
+      </div>
+      <div class="input-group">
+      <textarea id="productDescription" placeholder="Description" rows="4" cols="50"></textarea>
+      <select id="productCategory">
+        <option value="mobiles">Mobiles</option>
+        <option value="mobileAccessories">Mobile Accessories</option>
+        <option value="electronics">Electronics</option>
+      </select>
+    </div>
+      <div class="input-group">
+      <select id="productCondition">
+        <option value="new">New</option>
+        <option value="used">Used</option>
+        <option value="openBox">Open Box</option>
+        <option value="refurbished">Refurbished</option>
+        <option value="forParts">For Parts or Not Working</option>
+
+    </select>
+      <input type="text" id="productLocation" placeholder="Location">
+      </div>
+      <div class="input-group">
+      <input type="email" id="productEmail" placeholder="Email">
+      <input type="tel" id="productPhone" placeholder="Phone Number">
+      </div>
+      <button type="submit">Add Product</button>
+    </form>
+  </div>
+  <div id="snackbar" class="snackbar hidden">
+    Product added successfully!
+  </div>
+</body>
+ 

@@ -1,0 +1,14 @@
+<div class="admin-panel">
+    <header>
+      <h1>Admin Panel</h1>
+      <div class="stats">
+        <p>Total Posts: <span id="totalPosts">0</span></p>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <select id="sortPosts" onselect="filterPosts()">
+          <option value="name">Sort by Name</option>
+          <option value="price">Sort by Price</option>
+        </select>
+      </div>
+    </header>
+    <div class="posts-container" id="postsContainer"></div>
+  </div>

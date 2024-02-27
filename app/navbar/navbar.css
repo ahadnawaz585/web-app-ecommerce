@@ -1,0 +1,96 @@
+
+.navbar {
+    background-color: #f8f8f8; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .user-icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #3498db;
+  }
+  
+  .user {
+ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  .user-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    color:#3498db;
+  }
+
+
+  i{
+    color: #f8f8f8  ;
+    margin-top: 10px;
+  }
+
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .dark-mode .navbar {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .navbar h1 {
+    color: #fff; 
+  }
+  
+  .dark-mode .content {
+    color: #fff; 
+  }
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #000; 
+}
+
+.dark-mode .menu li a {
+  color: #fff; 
+}
+
